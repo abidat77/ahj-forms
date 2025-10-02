@@ -1,0 +1,26 @@
+.popover {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  max-width: 200px;
+  text-align: center;
+}
+
+.popover h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.popover p {
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+    padding: 80px;;
+}
