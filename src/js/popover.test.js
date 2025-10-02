@@ -1,18 +1,14 @@
-const { JSDOM } = require('jsdom');
-const dom = new JSDOM();
-global.window = dom.window;
-global.document = dom.window.document;
+delete require.cache[require.resolve('jsdom')];
 
 const fs = require('fs');
 const path = require('path');
-const { JSDOM } = require('jsdom');
+const { JSDOM } = require('jsdom'); 
 
 const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
-const dom = new JSDOM(html, {
+const dom = new JSDOM(html, {  
   runScripts: 'dangerously',  
   resources: 'usable'  
 });
-
 
 global.document = dom.window.document;
 global.window = dom.window;
