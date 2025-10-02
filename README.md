@@ -1,1 +1,2 @@
-[![CI](https://git@github.com:abidat77/ahj-forms.git/badge.svg)]
+
+[![CI](https://github.com/abidat77/ahj-forms/actions/workflows/web.yml/badge.svg)]
