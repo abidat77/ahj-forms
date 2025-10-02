@@ -1,3 +1,8 @@
+const { JSDOM } = require('jsdom');
+const dom = new JSDOM();
+global.window = dom.window;
+global.document = dom.window.document;
+
 const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
